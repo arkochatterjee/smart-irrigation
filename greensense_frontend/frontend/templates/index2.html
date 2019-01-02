@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css"/>
+<style>
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+
+    }
+    input[type=text] {
+    width: 180px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+
+
+    padding: 12px 20px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('{% static 'fonts/GothamBold.ttf' %}');
+
+  }
+  #rcorners1 {
+    border-radius: 15px 15px 15px 15px;
+    background: #73AD21;
+    padding: 10px;
+    width: 50px;
+    height: 10px;
+}
+
+
+    </style>
+</head>
+<script type="text/javascript">
+function load()
+{
+setTimeout("window.open(self.location, '_self');", 8000);
+}
+</script>
+<body  id="bg" style="background-image: url('{% static "images/b1.jpg"%}')";>
+
+  <div style = "width:100%">
+
+    <!-- <div style ="width:100%">
+       <center>
+        <h1>Green Sense</h1>
+      </center>
+     </div>
+    <hr> -->
+
+    <div style = "background-color:#aaa; height:650px; width:20%; float:left;">
+      <center>
+       <div><h4>Real Time Plant Data</h4></div>
+       pH<br>
+    <p id="rcorners1">{{ ph }}</p><br>
+    Soil Moisture<br>
+    <p id="rcorners1">{{ smos }}</p><br>
+    Air Humidity<br>
+    <p id="rcorners1">{{ amos }}</p><br>
+    Temperatue (Centigrade)<br>
+    <p id="rcorners1">{{ atemp }}</p><br>
+    Time Under Sunlight<br>
+      <p id="rcorners1">{{ min }}</p><br>
+<a href="{% url 'plant_more' %}">Click to know more!</a>
+     </center>
+    </div>
+
+<div style = "height:100%; width:100%; float:middle;" >
+  <br>
+<center><br>
+<h1>GREEN SENSE</h1><br>
+SELECT Make - A - Thon 2018 @ VIT University
+</center><br><br>
+
+
+  <form align='middle' method="post">
+
+      {% csrf_token %}
+
+<font face="GothamBold">  <h4 style="font-weight:bold;color:red">Temperatue | Pressure | Humidity | Description </h4></font>
+  <p style="color:white">  {{ live }}</p><br>
+<!--<input type="text" name="Website" placeholder="Enter City">
+
+<input type="submit" name="WebsiteS" value="Get Local Forecast"> -->
+
+
+</form>
+<br>
+<h3><a href="{% url 'plant_request' %}">Click to know more!</a></h3>
+<h3>  <a href="{% url 'simple_upload' %}">Upload Picture</a> </h3><br>
+<font face="GothamBold"> <p align='middle' style="color:white">Current Temperatue @ Chennai {{ output }}</p></font>
+
+
+
+
+
+
+
+  <!--  <div style=" position: fixed;
+       text-align: center;
+
+       bottom: 20px;
+       width: 100%;">
+       <img src="{% static 'images/logo.png' %}" height="100px" width="240px" align="middle"/> -->
+
+    </div>
+
+    <div style = "clear:both">
+      <br>
+       <center>
+          <p align='middle' style="color:white">
+          Developed with love by Team Web, SRM Institute of Science and Technology</p>
+       </center>
+    </div>
+
+  </div>
+</body>
+</html>
