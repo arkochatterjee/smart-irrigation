@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "358207276746",
+    "firebase_url": "https://smart-watersys.firebaseio.com",
+    "project_id": "smart-watersys",
+    "storage_bucket": "smart-watersys.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358207276746:android:32bf52089c4e2cb9fb9633",
+        "android_client_info": {
+          "package_name": "com.example.newproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358207276746-6ovtpc1ud27815o3ogehbc39pjd5gs9o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.newproject",
+            "certificate_hash": "0f3fc4381995d3b4c8a68181e6e5abb53d03830b"
+          }
+        },
+        {
+          "client_id": "358207276746-ruv7h86p21oern3vbpb241elp7pd92og.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr6xh4tswjyKMwITtowzN6CIEshrzcmMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358207276746-ruv7h86p21oern3vbpb241elp7pd92og.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358207276746:android:9368dab18d18371ffb9633",
+        "android_client_info": {
+          "package_name": "org.envision.smartwaterconservation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358207276746-d91nhknn5fh9mqmjnlef3cncp6f5c7c2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.envision.smartwaterconservation",
+            "certificate_hash": "91c74370108a8f98320d6315ccc1a2ea1c65883b"
+          }
+        },
+        {
+          "client_id": "358207276746-ruv7h86p21oern3vbpb241elp7pd92og.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr6xh4tswjyKMwITtowzN6CIEshrzcmMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358207276746-ruv7h86p21oern3vbpb241elp7pd92og.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
