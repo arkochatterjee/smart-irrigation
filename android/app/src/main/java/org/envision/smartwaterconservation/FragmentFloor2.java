@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -14,6 +15,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import org.aviran.cookiebar2.CookieBar;
 
 public class FragmentFloor2 extends Fragment {
 
@@ -53,6 +56,17 @@ public class FragmentFloor2 extends Fragment {
                 t1.setText("pH : "+x);
                 t2.setText("Temperature : "+z);
 
+                Toast.makeText(getActivity(),
+                        "Hello User :"+y+":"+x+":"+z,
+                        Toast.LENGTH_LONG).show();
+
+                CookieBar.build(getActivity())
+                        .setTitle("Hey Sayan")
+                        .setMessage(y+":"+x+":"+z)
+                        .setDuration(5000)
+                        .setBackgroundColor(R.color.red)
+                        //.setCookiePosition(CookieBar.BOTTOM)  // Cookie will be displayed at the bottom
+                        .show();
 
 
             }

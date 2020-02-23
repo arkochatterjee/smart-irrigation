@@ -30,6 +30,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.google.firebase:firebase-analytics:17.2.2'
     implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'org.aviran.cookiebar2:cookiebar2:1.0.9'
 
 }
 

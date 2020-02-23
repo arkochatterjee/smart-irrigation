@@ -11,12 +11,15 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import org.aviran.cookiebar2.CookieBar;
 
 public class FragmentHome extends Fragment {
 
@@ -56,6 +59,19 @@ public class FragmentHome extends Fragment {
                 t.setText("Flow Rate : "+y);
                 t1.setText("pH : "+x);
                 t2.setText("Temperature : "+z);
+
+
+                Toast.makeText(getActivity(),
+                        "Hello User :"+y+":"+x+":"+z,
+                        Toast.LENGTH_LONG).show();
+
+                CookieBar.build(getActivity())
+                        .setTitle("Hey Sayan")
+                        .setMessage(y+":"+x+":"+z)
+                        .setDuration(5000)
+                        .setBackgroundColor(R.color.red)
+                        //.setCookiePosition(CookieBar.BOTTOM)  // Cookie will be displayed at the bottom
+                        .show();
 
 
 
